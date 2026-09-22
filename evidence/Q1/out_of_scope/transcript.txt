@@ -1,0 +1,24 @@
+=== TRANSCRIPT: Scenario 'out_of_scope' (out_of_scope) ===
+
+Turn 1:
+  User : Should I invest my savings in stocks or mutual funds?
+  Agent: I don't have that information in the current knowledge base, so I don't want to guess. I can connect you with a human specialist.
+  Details -> Intent: out_of_scope | Escalated: True | Source: N/A | KB Hit: N/A
+
+Turn 2:
+  User : Also what is the exact underwriting formula?
+  Agent: I don't have that information in the current knowledge base, so I don't want to guess. I can connect you with a human specialist.
+  Details -> Intent: out_of_scope | Escalated: True | Source: N/A | KB Hit: N/A
+
+Turn 3:
+  User : Can you connect me with a representative?
+  Agent: I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.
+  Details -> Intent: fallback | Escalated: True | Source: N/A | KB Hit: N/A
+
+=== LEAD SUMMARY / CRM EXPORT ===
+CRM Stage    : escalated
+Next Action  : human specialist review
+Eligibility  : needs_human_review
+Coverage     : None
+Budget       : None
+Notes        : escalated:out_of_scope, escalated:out_of_scope, escalated:fallback

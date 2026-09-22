@@ -1,0 +1,8 @@
+{
+  "name": "conflicting_details",
+  "turns": [
+    "My son is 17.",
+    "Actually, he's already 19.",
+    "My phone number is [REDACTED_PHONE]."
+  ]
+}

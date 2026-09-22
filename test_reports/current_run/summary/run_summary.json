@@ -1,0 +1,36 @@
+{
+  "execution_status": "ALL_SUCCESS",
+  "timestamp": "2026-09-21 23:11:31 UTC",
+  "environment": {
+    "os": "win32",
+    "python_version": "3.13.1",
+    "dependencies": "Python Standard Library Only"
+  },
+  "modules_tested": {
+    "Q1_Voice_Agent": {
+      "status": "PASSED",
+      "scenarios": 6
+    },
+    "Q2_Knowledge_Base": {
+      "status": "PASSED",
+      "records": 21,
+      "retrieval_cases": 6
+    },
+    "Q3_Localization": {
+      "status": "PASSED",
+      "markets": [
+        "Philippines",
+        "Indonesia"
+      ],
+      "variants": 6
+    },
+    "Q4_Live_Insights": {
+      "status": "PASSED",
+      "signals_tested": 4,
+      "false_positive_rate": 0.0
+    }
+  },
+  "regression_matrix_score": "81/81 PASSED (100%)",
+  "evidence_directory": "evidence/my-run",
+  "baseline_directory": "evidence/baseline"
+}

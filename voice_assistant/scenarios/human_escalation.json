@@ -1,0 +1,7 @@
+{
+  "name": "human_escalation",
+  "turns": [
+    "I don't want to talk to an automated agent. Please connect me with a human.",
+    "Can you connect me with a person right now?"
+  ]
+}

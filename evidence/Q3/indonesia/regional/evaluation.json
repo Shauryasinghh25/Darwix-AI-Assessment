@@ -1,0 +1,10 @@
+{
+  "market": "Indonesia",
+  "language_variant": "regional",
+  "user_input": "Kulo telat bayar cicilan, pripun ya mas?",
+  "detected_intent": "regional_accent_payment_issue",
+  "detected_register": "javanese_influenced_bahasa",
+  "agent_response": "Nggih, saya bantu arahkan ya. Kalau telat bayar cicilan dan ada denda, saya tidak akan mengarang; opsi resminya perlu dicek oleh tim.",
+  "english_explanation": "The bot recognizes Javanese-influenced wording, acknowledges late installment/payment penalty concerns, and routes to official support.",
+  "status": "PASSED"
+}

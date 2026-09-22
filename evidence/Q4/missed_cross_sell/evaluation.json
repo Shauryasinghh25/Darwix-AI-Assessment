@@ -1,0 +1,53 @@
+{
+  "signal_category": "missed_cross_sell",
+  "turns_processed": 3,
+  "nudges_emitted": [
+    {
+      "chunk": 1,
+      "speaker": "customer",
+      "signal": {
+        "kind": "missed_cross_sell",
+        "detail": "Customer mentioned another car",
+        "confidence": 0.88,
+        "topic": "buying_signal"
+      },
+      "nudge": {
+        "message": "Customer mentioned a second vehicle. Suggest the multi-vehicle offer.",
+        "priority": "medium",
+        "expires_in_sec": 180
+      }
+    }
+  ],
+  "component_latencies": [
+    {
+      "chunk_index": 0,
+      "speaker": "customer",
+      "asr_ms": 4.237,
+      "signal_ms": 0.006,
+      "llm_ms": 0.0,
+      "nudge_ms": 0.0,
+      "delivery_ms": 0.0
+    },
+    {
+      "chunk_index": 1,
+      "speaker": "customer",
+      "asr_ms": 4.092,
+      "signal_ms": 0.018,
+      "llm_ms": 0.008,
+      "nudge_ms": 0.008,
+      "delivery_ms": 1.57
+    },
+    {
+      "chunk_index": 2,
+      "speaker": "agent",
+      "asr_ms": 4.125,
+      "signal_ms": 0.007,
+      "llm_ms": 0.0,
+      "nudge_ms": 0.0,
+      "delivery_ms": 0.0
+    }
+  ],
+  "p50_ms": 4.25,
+  "p95_ms": 4.25,
+  "status": "PASSED"
+}

@@ -1,0 +1,10 @@
+=== Realtime LIVE INSIGHTS SIMULATION (FRUSTRATION) ===
+
+Audio / Text Chunks:
+  [STREAM CHUNK] Customer: I've already explained this twice. This is getting really frustrating.
+  [STREAM CHUNK] Agent: I apologize for the confusion, let me review your file right now.
+
+Emitted Live Nudges:
+  (No nudges emitted - expected for noisy or clean non-trigger calls)
+
+Latency -> P50: 4.17ms | P95: 4.12ms

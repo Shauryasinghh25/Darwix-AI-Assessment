@@ -1,0 +1,7 @@
+crm_stage,escalated,last_intent,next_action,retrieval_hits,scenario,turns
+escalated,True,fallback,human specialist review,[],conflicting_details,3
+escalated,True,callback_request,human specialist review,"['kb_health_product_faq_002_b1caf76637', 'kb_lead_qualification_002_71571f0e0a']",cooperative_customer,4
+escalated,True,fallback,human specialist review,[],human_escalation,2
+escalated,True,incomplete_or_conflicting_details,human specialist review,"['kb_health_product_faq_002_b1caf76637', 'kb_lead_qualification_003_b543950459', 'kb_lead_qualification_003_b543950459']",incomplete_information,3
+callback_requested,False,callback_request,schedule callback,"['kb_health_product_faq_006_f97381463d', 'kb_lead_qualification_002_71571f0e0a']",price_objection,3
+escalated,True,fallback,human specialist review,[],out_of_scope,3

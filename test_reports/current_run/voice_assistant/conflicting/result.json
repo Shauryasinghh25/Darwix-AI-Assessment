@@ -1,0 +1,51 @@
+{
+  "scenario": "conflicting_details",
+  "scenario_key": "conflicting",
+  "turn_count": 3,
+  "transcript": [
+    {
+      "user": "My son is 17.",
+      "intent": "fallback",
+      "answer": "I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.",
+      "source_ref": null,
+      "escalated": true,
+      "retrieval_hit": null
+    },
+    {
+      "user": "Actually, he's already 19.",
+      "intent": "fallback",
+      "answer": "I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.",
+      "source_ref": null,
+      "escalated": true,
+      "retrieval_hit": null
+    },
+    {
+      "user": "My phone number is [REDACTED_PHONE].",
+      "intent": "fallback",
+      "answer": "I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.",
+      "source_ref": null,
+      "escalated": true,
+      "retrieval_hit": null
+    }
+  ],
+  "lead_summary": {
+    "name": null,
+    "intent": "health_insurance_lead_qualification",
+    "coverage": null,
+    "coverage_needs": [],
+    "budget_range": null,
+    "preliminary_eligibility": "needs_human_review",
+    "callback_requested": false,
+    "crm_stage": "escalated",
+    "next_action": "human specialist review",
+    "notes": [
+      "escalated:fallback",
+      "escalated:fallback",
+      "escalated:fallback"
+    ]
+  },
+  "crm_stage": "escalated",
+  "next_action": "human specialist review",
+  "preliminary_eligibility": "needs_human_review",
+  "retrieval_citations": []
+}

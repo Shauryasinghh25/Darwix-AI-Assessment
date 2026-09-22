@@ -1,0 +1,24 @@
+=== TRANSCRIPT: Scenario 'conflicting_details' (conflicting) ===
+
+Turn 1:
+  User : My son is 17.
+  Agent: I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.
+  Details -> Intent: fallback | Escalated: True | Source: N/A | KB Hit: N/A
+
+Turn 2:
+  User : Actually, he's already 19.
+  Agent: I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.
+  Details -> Intent: fallback | Escalated: True | Source: N/A | KB Hit: N/A
+
+Turn 3:
+  User : My phone number is [REDACTED_PHONE].
+  Agent: I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.
+  Details -> Intent: fallback | Escalated: True | Source: N/A | KB Hit: N/A
+
+=== LEAD SUMMARY / CRM EXPORT ===
+CRM Stage    : escalated
+Next Action  : human specialist review
+Eligibility  : needs_human_review
+Coverage     : None
+Budget       : None
+Notes        : escalated:fallback, escalated:fallback, escalated:fallback

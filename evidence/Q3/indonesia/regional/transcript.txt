@@ -1,0 +1,6 @@
+=== INDONESIA BOT TRANSCRIPT (REGIONAL) ===
+User Input          : Kulo telat bayar cicilan, pripun ya mas?
+Detected Register   : javanese_influenced_bahasa
+Detected Intent     : regional_accent_payment_issue
+Bot Response        : Nggih, saya bantu arahkan ya. Kalau telat bayar cicilan dan ada denda, saya tidak akan mengarang; opsi resminya perlu dicek oleh tim.
+English Explanation : The bot recognizes Javanese-influenced wording, acknowledges late installment/payment penalty concerns, and routes to official support.

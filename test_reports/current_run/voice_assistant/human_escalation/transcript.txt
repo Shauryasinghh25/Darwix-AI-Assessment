@@ -1,0 +1,19 @@
+=== TRANSCRIPT: Scenario 'human_escalation' (human_escalation) ===
+
+Turn 1:
+  User : I don't want to talk to an automated agent. Please connect me with a human.
+  Agent: I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.
+  Details -> Intent: fallback | Escalated: True | Source: N/A | KB Hit: N/A
+
+Turn 2:
+  User : Can you connect me with a person right now?
+  Agent: I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.
+  Details -> Intent: fallback | Escalated: True | Source: N/A | KB Hit: N/A
+
+=== LEAD SUMMARY / CRM EXPORT ===
+CRM Stage    : escalated
+Next Action  : human specialist review
+Eligibility  : needs_human_review
+Coverage     : None
+Budget       : None
+Notes        : escalated:fallback, escalated:fallback

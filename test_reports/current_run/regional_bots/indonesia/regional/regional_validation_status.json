@@ -1,0 +1,14 @@
+{
+  "market": "Indonesia",
+  "target_register": "Regional (Javanese)",
+  "test_input": "Kulo telat bayar cicilan pripun ya mas?",
+  "detected_intent": "regional_accent_payment_issue",
+  "detected_keywords": [
+    "kulo",
+    "pripun",
+    "cicilan"
+  ],
+  "match_status": "PASSED",
+  "english_explanation": "The bot recognizes Javanese-influenced wording, acknowledges late installment/payment penalty concerns, and routes to official support.",
+  "note": "Javanese polite vocabulary ('kulo' = I/my, 'pripun' = how) mapped correctly to Indonesian payment issue handler."
+}

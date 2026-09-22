@@ -1,0 +1,32 @@
+{
+  "status": "SUCCESS",
+  "source_directory": "D:\\DarwixAI\\knowledge_system\\data\\raw",
+  "output_path": "D:\\DarwixAI\\knowledge_system\\out\\kb.json",
+  "total_source_documents": 0,
+  "total_kb_records": 22,
+  "pii_masked": true,
+  "masking_rules": [
+    "phone numbers ([REDACTED_PHONE])",
+    "Aadhaar IDs ([REDACTED_AADHAAR])"
+  ],
+  "categories_covered": [
+    "claims",
+    "family_coverage",
+    "general",
+    "objection_handling",
+    "partnership_benefits",
+    "pii_handling",
+    "policy_renewal",
+    "product_plans",
+    "qualification_rules"
+  ],
+  "distinct_source_files": [
+    "raw/health_product_faq.txt",
+    "raw/lead_qualification.txt",
+    "raw/policy_renewal.txt",
+    "raw/qualification_table.csv",
+    "raw/website_partnerships.txt"
+  ],
+  "build_duration_ms": 31.11,
+  "timestamp": "2026-09-22 20:53:24 UTC"
+}

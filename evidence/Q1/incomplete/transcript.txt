@@ -1,0 +1,24 @@
+=== TRANSCRIPT: Scenario 'incomplete_information' (incomplete) ===
+
+Turn 1:
+  User : I want health insurance for my family.
+  Agent: I understand this is for family coverage. A family floater may fit; I should collect each member's age before suggesting a plan.
+  Details -> Intent: family_coverage | Escalated: False | Source: raw/health_product_faq.txt | KB Hit: kb_health_product_faq_002_b1caf76637
+
+Turn 2:
+  User : I'm not sure what coverage I need.
+  Agent: I see missing or conflicting qualification details, so I should not guess. I'll route this for a human callback or collect the missing fields first.
+  Details -> Intent: incomplete_or_conflicting_details | Escalated: True | Source: raw/lead_qualification.txt | KB Hit: kb_lead_qualification_003_b543950459
+
+Turn 3:
+  User : I don't know my budget yet.
+  Agent: I see missing or conflicting qualification details, so I should not guess. I'll route this for a human callback or collect the missing fields first.
+  Details -> Intent: incomplete_or_conflicting_details | Escalated: True | Source: raw/lead_qualification.txt | KB Hit: kb_lead_qualification_003_b543950459
+
+=== LEAD SUMMARY / CRM EXPORT ===
+CRM Stage    : escalated
+Next Action  : human specialist review
+Eligibility  : needs_human_review
+Coverage     : None
+Budget       : monthly budget mentioned
+Notes        : retrieval:kb_health_product_faq_002_b1caf76637, escalated:incomplete_or_conflicting_details, retrieval:kb_lead_qualification_003_b543950459, escalated:incomplete_or_conflicting_details, retrieval:kb_lead_qualification_003_b543950459

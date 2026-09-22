@@ -1,0 +1,10 @@
+=== Q4 LIVE INSIGHTS SIMULATION (NOISY_CALL) ===
+
+Audio / Text Chunks:
+  [STREAM CHUNK] Customer: uh... yeah... hmm... okay... maybe... I don't know...
+  [STREAM CHUNK] Agent: Hello can you hear me ok?
+
+Emitted Live Nudges:
+  (No nudges emitted - expected for noisy or clean non-trigger calls)
+
+Latency -> P50: 4.51ms | P95: 4.29ms

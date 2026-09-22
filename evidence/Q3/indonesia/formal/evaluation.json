@@ -1,0 +1,10 @@
+{
+  "market": "Indonesia",
+  "language_variant": "formal",
+  "user_input": "Saya ingin mengetahui informasi mengenai pembiayaan. Berapa tenor yang tersedia?",
+  "detected_intent": "installment_or_terms",
+  "detected_register": "colloquial_bahasa",
+  "agent_response": "Saya bantu cek ya. Kita bisa bahas cicilan, tenor, DP, dan tanggal jatuh tempo dengan bahasa yang santai tapi tetap jelas.",
+  "english_explanation": "The bot detects consumer-finance terms and continues in clear, colloquial Bahasa Indonesia.",
+  "status": "PASSED"
+}

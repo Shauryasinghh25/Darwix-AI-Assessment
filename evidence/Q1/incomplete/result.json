@@ -1,0 +1,57 @@
+{
+  "scenario": "incomplete_information",
+  "scenario_key": "incomplete",
+  "turn_count": 3,
+  "transcript": [
+    {
+      "user": "I want health insurance for my family.",
+      "intent": "family_coverage",
+      "answer": "I understand this is for family coverage. A family floater may fit; I should collect each member's age before suggesting a plan.",
+      "source_ref": "raw/health_product_faq.txt",
+      "escalated": false,
+      "retrieval_hit": "kb_health_product_faq_002_b1caf76637"
+    },
+    {
+      "user": "I'm not sure what coverage I need.",
+      "intent": "incomplete_or_conflicting_details",
+      "answer": "I see missing or conflicting qualification details, so I should not guess. I'll route this for a human callback or collect the missing fields first.",
+      "source_ref": "raw/lead_qualification.txt",
+      "escalated": true,
+      "retrieval_hit": "kb_lead_qualification_003_b543950459"
+    },
+    {
+      "user": "I don't know my budget yet.",
+      "intent": "incomplete_or_conflicting_details",
+      "answer": "I see missing or conflicting qualification details, so I should not guess. I'll route this for a human callback or collect the missing fields first.",
+      "source_ref": "raw/lead_qualification.txt",
+      "escalated": true,
+      "retrieval_hit": "kb_lead_qualification_003_b543950459"
+    }
+  ],
+  "lead_summary": {
+    "name": null,
+    "intent": "health_insurance_lead_qualification",
+    "coverage": null,
+    "coverage_needs": [],
+    "budget_range": "monthly budget mentioned",
+    "preliminary_eligibility": "needs_human_review",
+    "callback_requested": false,
+    "crm_stage": "escalated",
+    "next_action": "human specialist review",
+    "notes": [
+      "retrieval:kb_health_product_faq_002_b1caf76637",
+      "escalated:incomplete_or_conflicting_details",
+      "retrieval:kb_lead_qualification_003_b543950459",
+      "escalated:incomplete_or_conflicting_details",
+      "retrieval:kb_lead_qualification_003_b543950459"
+    ]
+  },
+  "crm_stage": "escalated",
+  "next_action": "human specialist review",
+  "preliminary_eligibility": "needs_human_review",
+  "retrieval_citations": [
+    "raw/health_product_faq.txt",
+    "raw/lead_qualification.txt",
+    "raw/lead_qualification.txt"
+  ]
+}

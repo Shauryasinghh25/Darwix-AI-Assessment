@@ -1,0 +1,10 @@
+{
+  "market": "Philippines",
+  "language_variant": "taglish",
+  "user_input": "Gusto ko mag-apply ng insurance for my family. Covered ba ang hospital expenses?",
+  "detected_intent": "family_coverage",
+  "detected_register": "taglish_polite",
+  "agent_response": "Noted po. Kung family coverage ang kailangan, i-check natin ang policy and rider options nang hindi tayo mag-assume.",
+  "english_explanation": "The bot collects dependent/family coverage needs and explicitly avoids assuming exact rider eligibility.",
+  "status": "PASSED"
+}

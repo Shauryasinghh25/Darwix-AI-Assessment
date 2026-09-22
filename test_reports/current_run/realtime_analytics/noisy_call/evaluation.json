@@ -1,0 +1,28 @@
+{
+  "signal_category": "noisy_call",
+  "turns_processed": 2,
+  "nudges_emitted": [],
+  "component_latencies": [
+    {
+      "chunk_index": 0,
+      "speaker": "customer",
+      "asr_ms": 4.233,
+      "signal_ms": 0.018,
+      "llm_ms": 0.0,
+      "nudge_ms": 0.0,
+      "delivery_ms": 0.0
+    },
+    {
+      "chunk_index": 1,
+      "speaker": "agent",
+      "asr_ms": 4.655,
+      "signal_ms": 0.031,
+      "llm_ms": 0.0,
+      "nudge_ms": 0.0,
+      "delivery_ms": 0.0
+    }
+  ],
+  "p50_ms": 4.51,
+  "p95_ms": 4.29,
+  "status": "PASSED"
+}

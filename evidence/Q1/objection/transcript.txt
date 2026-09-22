@@ -1,0 +1,24 @@
+=== TRANSCRIPT: Scenario 'price_objection' (objection) ===
+
+Turn 1:
+  User : The premium seems expensive.
+  Agent: I understand the concern. We can review benefits, check a lower coverage amount or simpler plan, and have an advisor confirm exact pricing without promising discounts.
+  Details -> Intent: objection | Escalated: False | Source: raw/health_product_faq.txt | KB Hit: kb_health_product_faq_006_f97381463d
+
+Turn 2:
+  User : Is there a more affordable option if I mainly need hospitalization coverage?
+  Agent: Thanks, that helps. I've noted the coverage needs and budget range. If any required details are missing, I'll route this for a callback instead of guessing.
+  Details -> Intent: qualification | Escalated: False | Source: raw/lead_qualification.txt | KB Hit: kb_lead_qualification_002_71571f0e0a
+
+Turn 3:
+  User : If I am not sure yet, can someone call me later?
+  Agent: Absolutely. I'll save the callback request and note the requested time so a human can follow up.
+  Details -> Intent: callback_request | Escalated: False | Source: N/A | KB Hit: N/A
+
+=== LEAD SUMMARY / CRM EXPORT ===
+CRM Stage    : callback_requested
+Next Action  : schedule callback
+Eligibility  : preliminarily_qualified
+Coverage     : hospitalization
+Budget       : None
+Notes        : retrieval:kb_health_product_faq_006_f97381463d, retrieval:kb_lead_qualification_002_71571f0e0a

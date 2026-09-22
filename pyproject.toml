@@ -1,0 +1,8 @@
+[tool.pyright]
+extraPaths = [
+    "voice_assistant/src",
+    "knowledge_system/src",
+    "regional_bots/src",
+    "realtime_analytics/src",
+    "tools"
+]

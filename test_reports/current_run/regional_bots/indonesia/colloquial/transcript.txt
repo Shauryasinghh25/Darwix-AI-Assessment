@@ -1,0 +1,6 @@
+=== INDONESIA BOT TRANSCRIPT (COLLOQUIAL) ===
+User Input          : Mau tanya dong, cicilannya berapa per bulan?
+Detected Register   : colloquial_bahasa
+Detected Intent     : installment_or_terms
+Bot Response        : Saya bantu cek ya. Kita bisa bahas cicilan, tenor, DP, dan tanggal jatuh tempo dengan bahasa yang santai tapi tetap jelas.
+English Explanation : The bot detects consumer-finance terms and continues in clear, colloquial Bahasa Indonesia.

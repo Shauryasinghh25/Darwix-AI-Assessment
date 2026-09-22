@@ -1,0 +1,65 @@
+{
+  "scenario": "cooperative_customer",
+  "scenario_key": "cooperative",
+  "turn_count": 4,
+  "transcript": [
+    {
+      "user": "I'm looking for health insurance for myself, my wife and my child.",
+      "intent": "family_coverage",
+      "answer": "I understand this is for family coverage. A family floater may fit; I should collect each member's age before suggesting a plan.",
+      "source_ref": "raw/health_product_faq.txt",
+      "escalated": false,
+      "retrieval_hit": "kb_health_product_faq_002_b1caf76637"
+    },
+    {
+      "user": "I mainly need hospitalization and outpatient coverage.",
+      "intent": "qualification",
+      "answer": "Thanks, that helps. I've noted the coverage needs and budget range. If any required details are missing, I'll route this for a callback instead of guessing.",
+      "source_ref": "raw/lead_qualification.txt",
+      "escalated": false,
+      "retrieval_hit": "kb_lead_qualification_002_71571f0e0a"
+    },
+    {
+      "user": "I can spend around 3000 rupees per month.",
+      "intent": "fallback",
+      "answer": "I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.",
+      "source_ref": null,
+      "escalated": true,
+      "retrieval_hit": null
+    },
+    {
+      "user": "Can someone call me tomorrow evening?",
+      "intent": "callback_request",
+      "answer": "Absolutely. I'll save the callback request and note the requested time so a human can follow up.",
+      "source_ref": null,
+      "escalated": false,
+      "retrieval_hit": null
+    }
+  ],
+  "lead_summary": {
+    "name": null,
+    "intent": "health_insurance_lead_qualification",
+    "coverage": "outpatient, hospitalization",
+    "coverage_needs": [
+      "outpatient",
+      "hospitalization"
+    ],
+    "budget_range": null,
+    "preliminary_eligibility": "needs_human_review",
+    "callback_requested": true,
+    "crm_stage": "escalated",
+    "next_action": "human specialist review",
+    "notes": [
+      "retrieval:kb_health_product_faq_002_b1caf76637",
+      "retrieval:kb_lead_qualification_002_71571f0e0a",
+      "escalated:fallback"
+    ]
+  },
+  "crm_stage": "escalated",
+  "next_action": "human specialist review",
+  "preliminary_eligibility": "needs_human_review",
+  "retrieval_citations": [
+    "raw/health_product_faq.txt",
+    "raw/lead_qualification.txt"
+  ]
+}

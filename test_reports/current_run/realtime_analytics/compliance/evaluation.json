@@ -1,0 +1,44 @@
+{
+  "signal_category": "compliance",
+  "turns_processed": 2,
+  "nudges_emitted": [
+    {
+      "chunk": 0,
+      "speaker": "agent",
+      "signal": {
+        "kind": "compliance_gap",
+        "detail": "Required disclosure may be missing",
+        "confidence": 0.95,
+        "topic": "compliance"
+      },
+      "nudge": {
+        "message": "Required disclosure is missing. Remind the agent before proceeding.",
+        "priority": "high",
+        "expires_in_sec": 90
+      }
+    }
+  ],
+  "component_latencies": [
+    {
+      "chunk_index": 0,
+      "speaker": "agent",
+      "asr_ms": 5.815,
+      "signal_ms": 0.046,
+      "llm_ms": 0.016,
+      "nudge_ms": 0.016,
+      "delivery_ms": 1.226
+    },
+    {
+      "chunk_index": 1,
+      "speaker": "agent",
+      "asr_ms": 4.722,
+      "signal_ms": 0.061,
+      "llm_ms": 0.0,
+      "nudge_ms": 0.0,
+      "delivery_ms": 0.0
+    }
+  ],
+  "p50_ms": 6.03,
+  "p95_ms": 4.85,
+  "status": "PASSED"
+}

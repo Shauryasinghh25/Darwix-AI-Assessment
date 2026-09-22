@@ -1,0 +1,4 @@
+field,standard_name,category,notes
+Applicant Age,applicant_age,qualification_rules,Adult applicants between 18 and 65 may be eligible depending on product.
+Monthly Budget,monthly_budget,qualification_rules,Use ranges rather than exact sensitive income values (e.g. 3000 rupees monthly).
+Callback Requested,callback_requested,lead_action,Schedule callback when customer asks for a later follow-up.

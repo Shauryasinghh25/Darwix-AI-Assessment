@@ -1,0 +1,90 @@
+[
+  {
+    "case_id": "RET-01",
+    "type": "product",
+    "query": "What hospitalization coverage is available?",
+    "expected_category": "product_plans",
+    "retrieved_category": "product_plans",
+    "top_record_id": "kb_health_product_faq_000_49c1897992",
+    "source_ref": "raw/health_product_faq.txt",
+    "hit_count": 3,
+    "status": "PASSED"
+  },
+  {
+    "case_id": "RET-02",
+    "type": "qualification",
+    "query": "What information is required to qualify?",
+    "expected_category": "qualification_rules",
+    "retrieved_category": "qualification_rules",
+    "top_record_id": "kb_lead_qualification_002_71571f0e0a",
+    "source_ref": "raw/lead_qualification.txt",
+    "hit_count": 2,
+    "status": "PASSED"
+  },
+  {
+    "case_id": "RET-03",
+    "type": "eligibility",
+    "query": "Can I add my spouse and child?",
+    "expected_category": "family_coverage",
+    "retrieved_category": "family_coverage",
+    "top_record_id": "kb_health_product_faq_002_b1caf76637",
+    "source_ref": "raw/health_product_faq.txt",
+    "hit_count": 3,
+    "status": "PASSED"
+  },
+  {
+    "case_id": "RET-04",
+    "type": "faq",
+    "query": "How does policy renewal work?",
+    "expected_category": "policy_renewal",
+    "retrieved_category": "policy_renewal",
+    "top_record_id": "kb_policy_renewal_000_d5f75769a0",
+    "source_ref": "raw/policy_renewal.txt",
+    "hit_count": 3,
+    "status": "PASSED"
+  },
+  {
+    "case_id": "RET-05",
+    "type": "objection",
+    "query": "The premium is too expensive. What information is available about the available coverage/options?",
+    "expected_category": "objection_handling",
+    "retrieved_category": "objection_handling",
+    "top_record_id": "kb_health_product_faq_006_f97381463d",
+    "source_ref": "raw/health_product_faq.txt",
+    "hit_count": 3,
+    "status": "PASSED"
+  },
+  {
+    "case_id": "RET-06",
+    "type": "noisy_input",
+    "query": "What happens during renwel?",
+    "expected_category": "policy_renewal",
+    "retrieved_category": "policy_renewal",
+    "top_record_id": "kb_policy_renewal_000_d5f75769a0",
+    "source_ref": "raw/policy_renewal.txt",
+    "hit_count": 3,
+    "status": "PASSED"
+  },
+  {
+    "case_id": "RET-07",
+    "type": "negative_out_of_scope",
+    "query": "Which stocks should I buy?",
+    "expected_category": null,
+    "retrieved_category": "qualification_rules",
+    "top_record_id": "kb_lead_qualification_002_71571f0e0a",
+    "source_ref": "raw/lead_qualification.txt",
+    "hit_count": 3,
+    "status": "FAILED"
+  },
+  {
+    "case_id": "RET-08",
+    "type": "partnership_business",
+    "query": "What support do branch partners receive?",
+    "expected_category": "partnership_benefits",
+    "retrieved_category": "partnership_benefits",
+    "top_record_id": "kb_website_partnerships_003_bd1c71a9ff",
+    "source_ref": "raw/website_partnerships.txt",
+    "hit_count": 3,
+    "status": "PASSED"
+  }
+]

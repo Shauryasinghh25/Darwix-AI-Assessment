@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+*.py[cod]
+
+# Environments
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+env/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+*.bin
+*.model
+
+# Large Files
+*.wav
+*.mp3
+*.m4a
+
+# Specific files
+VIDEO_DEMO_SCRIPT.md
+ARCHITECTURE_WALKTHROUGH.md
+assets/architecture-walkthrough.svg

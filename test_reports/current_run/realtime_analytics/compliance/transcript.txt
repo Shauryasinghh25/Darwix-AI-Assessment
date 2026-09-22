@@ -1,0 +1,10 @@
+=== Q4 LIVE INSIGHTS SIMULATION (COMPLIANCE) ===
+
+Audio / Text Chunks:
+  [STREAM CHUNK] Agent: I skipped the disclosure notice for quick processing.
+  [STREAM CHUNK] Agent: I guarantee 100% full payout with no exclusions whatsoever.
+
+Emitted Live Nudges:
+  - [COMPLIANCE_GAP] Priority: high | Message: Required disclosure is missing. Remind the agent before proceeding.
+
+Latency -> P50: 6.03ms | P95: 4.85ms

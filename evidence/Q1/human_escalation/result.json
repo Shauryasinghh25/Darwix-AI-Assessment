@@ -1,0 +1,42 @@
+{
+  "scenario": "human_escalation",
+  "scenario_key": "human_escalation",
+  "turn_count": 2,
+  "transcript": [
+    {
+      "user": "I don't want to talk to an automated agent. Please connect me with a human.",
+      "intent": "fallback",
+      "answer": "I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.",
+      "source_ref": null,
+      "escalated": true,
+      "retrieval_hit": null
+    },
+    {
+      "user": "Can you connect me with a person right now?",
+      "intent": "fallback",
+      "answer": "I'm not fully sure based on the knowledge base, so I'd rather escalate this than guess.",
+      "source_ref": null,
+      "escalated": true,
+      "retrieval_hit": null
+    }
+  ],
+  "lead_summary": {
+    "name": null,
+    "intent": "health_insurance_lead_qualification",
+    "coverage": null,
+    "coverage_needs": [],
+    "budget_range": null,
+    "preliminary_eligibility": "needs_human_review",
+    "callback_requested": false,
+    "crm_stage": "escalated",
+    "next_action": "human specialist review",
+    "notes": [
+      "escalated:fallback",
+      "escalated:fallback"
+    ]
+  },
+  "crm_stage": "escalated",
+  "next_action": "human specialist review",
+  "preliminary_eligibility": "needs_human_review",
+  "retrieval_citations": []
+}

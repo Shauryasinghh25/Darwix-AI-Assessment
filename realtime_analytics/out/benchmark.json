@@ -1,0 +1,254 @@
+{
+  "normal": {
+    "nudges": [
+      {
+        "chunk": 1,
+        "speaker": "customer",
+        "signal": {
+          "kind": "missed_cross_sell",
+          "detail": "Customer mentioned another vehicle",
+          "confidence": 0.88,
+          "topic": "buying_signal"
+        },
+        "nudge": {
+          "message": "Customer mentioned a second vehicle. Suggest the multi-vehicle offer.",
+          "priority": "medium",
+          "expires_in_sec": 180
+        }
+      },
+      {
+        "chunk": 2,
+        "speaker": "customer",
+        "signal": {
+          "kind": "compliance_gap",
+          "detail": "Required disclosure may be missing",
+          "confidence": 0.95,
+          "topic": "compliance"
+        },
+        "nudge": {
+          "message": "Required disclosure is missing. Remind the agent before proceeding.",
+          "priority": "high",
+          "expires_in_sec": 90
+        }
+      },
+      {
+        "chunk": 2,
+        "speaker": "customer",
+        "signal": {
+          "kind": "frustration",
+          "detail": "Customer appears frustrated",
+          "confidence": 0.91,
+          "topic": "sentiment"
+        },
+        "nudge": {
+          "message": "Acknowledge the concern before continuing.",
+          "priority": "high",
+          "expires_in_sec": 120
+        }
+      },
+      {
+        "chunk": 3,
+        "speaker": "customer",
+        "signal": {
+          "kind": "callback_need",
+          "detail": "Customer requested callback or payment help",
+          "confidence": 0.84,
+          "topic": "payment_support"
+        },
+        "nudge": {
+          "message": "Offer an approved callback path or payment-support option.",
+          "priority": "medium",
+          "expires_in_sec": 180
+        }
+      }
+    ],
+    "timeline": [
+      {
+        "chunk_index": 0,
+        "speaker": "customer",
+        "text": "Hello, I have one vehicle on my policy.",
+        "signals": []
+      },
+      {
+        "chunk_index": 1,
+        "speaker": "customer",
+        "text": "Actually I bought a second car last week.",
+        "signals": [
+          {
+            "kind": "missed_cross_sell",
+            "detail": "Customer mentioned another vehicle",
+            "confidence": 0.88,
+            "topic": "buying_signal"
+          }
+        ]
+      },
+      {
+        "chunk_index": 2,
+        "speaker": "customer",
+        "text": "Your agent skipped the disclosure and I am getting frustrated.",
+        "signals": [
+          {
+            "kind": "compliance_gap",
+            "detail": "Required disclosure may be missing",
+            "confidence": 0.95,
+            "topic": "compliance"
+          },
+          {
+            "kind": "frustration",
+            "detail": "Customer appears frustrated",
+            "confidence": 0.91,
+            "topic": "sentiment"
+          }
+        ]
+      },
+      {
+        "chunk_index": 3,
+        "speaker": "customer",
+        "text": "I can't pay right now, call me later.",
+        "signals": [
+          {
+            "kind": "callback_need",
+            "detail": "Customer requested callback or payment help",
+            "confidence": 0.84,
+            "topic": "payment_support"
+          }
+        ]
+      }
+    ],
+    "p50_ms": 7.01,
+    "p95_ms": 7.3,
+    "component_latency_ms": [
+      {
+        "chunk_index": 0,
+        "speaker": "customer",
+        "asr_ms": 4.313,
+        "signal_ms": 0.008,
+        "llm_ms": 0.0,
+        "nudge_ms": 0.0,
+        "delivery_ms": 0.0
+      },
+      {
+        "chunk_index": 1,
+        "speaker": "customer",
+        "asr_ms": 5.202,
+        "signal_ms": 0.165,
+        "llm_ms": 0.063,
+        "nudge_ms": 0.063,
+        "delivery_ms": 1.5
+      },
+      {
+        "chunk_index": 2,
+        "speaker": "customer",
+        "asr_ms": 4.631,
+        "signal_ms": 0.04,
+        "llm_ms": 0.036,
+        "nudge_ms": 0.036,
+        "delivery_ms": 1.935
+      },
+      {
+        "chunk_index": 3,
+        "speaker": "customer",
+        "asr_ms": 4.249,
+        "signal_ms": 0.078,
+        "llm_ms": 0.023,
+        "nudge_ms": 0.023,
+        "delivery_ms": 2.084
+      }
+    ],
+    "controls": {
+      "confidence_threshold": 0.8,
+      "duplicate_suppression": true,
+      "topic_grouping": true,
+      "cooldown_policy": "one active nudge per signal/topic group unless compliance is repeated",
+      "priority_and_expiry": true
+    },
+    "false_positive_analysis": {
+      "noisy_or_ambiguous_chunks": 0,
+      "nudges_emitted": 4,
+      "suppression_note": "No nudge is emitted unless a signal crosses the confidence threshold and duplicate controls."
+    },
+    "chunks": 4
+  },
+  "noisy": {
+    "nudges": [],
+    "timeline": [
+      {
+        "chunk_index": 0,
+        "speaker": "unknown",
+        "text": "background noise ... okay maybe...",
+        "signals": []
+      },
+      {
+        "chunk_index": 1,
+        "speaker": "unknown",
+        "text": "not sure what you mean ...",
+        "signals": []
+      },
+      {
+        "chunk_index": 2,
+        "speaker": "unknown",
+        "text": "just a normal update, nothing urgent",
+        "signals": []
+      },
+      {
+        "chunk_index": 3,
+        "speaker": "unknown",
+        "text": "okay thanks",
+        "signals": []
+      }
+    ],
+    "p50_ms": 4.66,
+    "p95_ms": 4.91,
+    "component_latency_ms": [
+      {
+        "chunk_index": 0,
+        "speaker": "unknown",
+        "asr_ms": 4.362,
+        "signal_ms": 0.02,
+        "llm_ms": 0.0,
+        "nudge_ms": 0.0,
+        "delivery_ms": 0.0
+      },
+      {
+        "chunk_index": 1,
+        "speaker": "unknown",
+        "asr_ms": 4.18,
+        "signal_ms": 0.019,
+        "llm_ms": 0.0,
+        "nudge_ms": 0.0,
+        "delivery_ms": 0.0
+      },
+      {
+        "chunk_index": 2,
+        "speaker": "unknown",
+        "asr_ms": 4.874,
+        "signal_ms": 0.014,
+        "llm_ms": 0.0,
+        "nudge_ms": 0.0,
+        "delivery_ms": 0.0
+      },
+      {
+        "chunk_index": 3,
+        "speaker": "unknown",
+        "asr_ms": 4.817,
+        "signal_ms": 0.042,
+        "llm_ms": 0.0,
+        "nudge_ms": 0.0,
+        "delivery_ms": 0.0
+      }
+    ],
+    "controls": {
+      "confidence_threshold": 0.8,
+      "duplicate_suppression": true,
+      "topic_grouping": true,
+      "cooldown_policy": "one active nudge per signal/topic group unless compliance is repeated",
+      "priority_and_expiry": true
+    },
+    "false_positive_analysis": {
+      "noisy_or_ambiguous_chunks": 2,
+      "nudges_emitted": 0,
+      "suppression_note": "No nudge is emitted unless a signal crosses the confidence threshold and duplicate controls."
+    },
+    "chunks": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "benchmark_runs": 100,
+  "total_chunks_processed": 100,
+  "p50_latency_ms": 9.58,
+  "p95_latency_ms": 9.58,
+  "mean_latency_ms": 6.12,
+  "simulation_disclaimer": "This benchmark measures pipeline execution on text stream chunks with simulated ASR delay (time.sleep(0.004)) and delivery delay (time.sleep(0.001)). LLM signal detection is simulated via in-memory keyword rules.",
+  "status": "PASSED"
+}

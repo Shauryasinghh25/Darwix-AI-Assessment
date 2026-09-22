@@ -1,0 +1,6 @@
+=== PHILIPPINES BOT TRANSCRIPT (FILIPINO) ===
+User Input          : Gusto ko mag-apply ng insurance para sa pamilya ko. Magkano ang premium?
+Detected Register   : taglish
+Detected Intent     : policy_faq
+Bot Response        : Thanks po. For your policy, we can discuss premium, beneficiary, rider, and coverage in Taglish if that is easier.
+English Explanation : The bot recognizes life-insurance terminology and offers to continue qualification in natural Taglish.

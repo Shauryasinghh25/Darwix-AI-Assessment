@@ -1,0 +1,55 @@
+{
+  "scenario": "price_objection",
+  "scenario_key": "objection",
+  "turn_count": 3,
+  "transcript": [
+    {
+      "user": "The premium seems expensive.",
+      "intent": "objection",
+      "answer": "I understand the concern. We can review benefits, check a lower coverage amount or simpler plan, and have an advisor confirm exact pricing without promising discounts.",
+      "source_ref": "raw/health_product_faq.txt",
+      "escalated": false,
+      "retrieval_hit": "kb_health_product_faq_006_f97381463d"
+    },
+    {
+      "user": "Is there a more affordable option if I mainly need hospitalization coverage?",
+      "intent": "qualification",
+      "answer": "Thanks, that helps. I've noted the coverage needs and budget range. If any required details are missing, I'll route this for a callback instead of guessing.",
+      "source_ref": "raw/lead_qualification.txt",
+      "escalated": false,
+      "retrieval_hit": "kb_lead_qualification_002_71571f0e0a"
+    },
+    {
+      "user": "If I am not sure yet, can someone call me later?",
+      "intent": "callback_request",
+      "answer": "Absolutely. I'll save the callback request and note the requested time so a human can follow up.",
+      "source_ref": null,
+      "escalated": false,
+      "retrieval_hit": null
+    }
+  ],
+  "lead_summary": {
+    "name": null,
+    "intent": "health_insurance_lead_qualification",
+    "coverage": "hospitalization",
+    "coverage_needs": [
+      "hospitalization"
+    ],
+    "budget_range": null,
+    "preliminary_eligibility": "preliminarily_qualified",
+    "callback_requested": true,
+    "crm_stage": "callback_requested",
+    "next_action": "schedule callback",
+    "notes": [
+      "retrieval:kb_health_product_faq_006_f97381463d",
+      "retrieval:kb_lead_qualification_002_71571f0e0a"
+    ]
+  },
+  "crm_stage": "callback_requested",
+  "next_action": "schedule callback",
+  "preliminary_eligibility": "preliminarily_qualified",
+  "retrieval_citations": [
+    "raw/health_product_faq.txt",
+    "raw/lead_qualification.txt"
+  ]
+}

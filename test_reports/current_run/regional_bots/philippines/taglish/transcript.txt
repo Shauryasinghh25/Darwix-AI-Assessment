@@ -1,0 +1,6 @@
+=== PHILIPPINES BOT TRANSCRIPT (TAGLISH) ===
+User Input          : Gusto ko mag-apply ng insurance for my family. Covered ba ang hospital expenses?
+Detected Register   : taglish_polite
+Detected Intent     : family_coverage
+Bot Response        : Noted po. Kung family coverage ang kailangan, i-check natin ang policy and rider options nang hindi tayo mag-assume.
+English Explanation : The bot collects dependent/family coverage needs and explicitly avoids assuming exact rider eligibility.

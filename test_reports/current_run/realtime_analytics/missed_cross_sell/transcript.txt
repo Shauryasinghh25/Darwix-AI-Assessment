@@ -1,0 +1,11 @@
+=== Q4 LIVE INSIGHTS SIMULATION (MISSED_CROSS_SELL) ===
+
+Audio / Text Chunks:
+  [STREAM CHUNK] Customer: I already have one vehicle insured with you.
+  [STREAM CHUNK] Customer: Actually, I bought another car last month.
+  [STREAM CHUNK] Agent: Great, let me help you with your health policy.
+
+Emitted Live Nudges:
+  - [MISSED_CROSS_SELL] Priority: medium | Message: Customer mentioned a second vehicle. Suggest the multi-vehicle offer.
+
+Latency -> P50: 4.94ms | P95: 4.94ms

@@ -1,0 +1,12 @@
+{
+  "test_suite": "Noisy Call False Positive Benchmark",
+  "test_inputs": [
+    "background noise ... okay maybe...",
+    "not sure what you mean ...",
+    "Um ah hello yeah like okay thanks"
+  ],
+  "total_noisy_chunks": 50,
+  "nudges_emitted": 0,
+  "false_positive_rate": 0.0,
+  "evaluation": "PASSED (0 false positives on background noise / non-trigger turns)"
+}

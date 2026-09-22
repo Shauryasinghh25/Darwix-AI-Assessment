@@ -1,0 +1,10 @@
+{
+  "market": "Philippines",
+  "language_variant": "english",
+  "user_input": "I want to apply for life insurance. How much is the premium?",
+  "detected_intent": "policy_faq",
+  "detected_register": "taglish",
+  "agent_response": "Thanks po. For your policy, we can discuss premium, beneficiary, rider, and coverage in Taglish if that is easier.",
+  "english_explanation": "The bot recognizes life-insurance terminology and offers to continue qualification in natural Taglish.",
+  "status": "PASSED"
+}

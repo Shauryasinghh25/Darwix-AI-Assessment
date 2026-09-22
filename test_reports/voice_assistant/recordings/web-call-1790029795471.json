@@ -1,0 +1,12 @@
+[
+  {
+    "speaker": "customer",
+    "text": "I want to know about the insurance policy about my family"
+  },
+  {
+    "speaker": "agent",
+    "text": "I understand this is for family coverage. A family floater may fit; I should collect each member's age before suggesting a plan.",
+    "intent": "family_coverage",
+    "source_ref": "raw/health_product_faq.txt"
+  }
+]
