@@ -170,18 +170,14 @@ TTS_PROVIDER=
 ```
 See `.env.example` (to be created) for a template.
 
-## 20. Known Limitations
-- **Q4 Real-Time Streaming:** The current implementation processes pre-generated text chunks rather than live audio streams. Actual ASR integration is mocked.
-- **Evidence Formatting:** The evidence generated currently outputs to `test_reports/` instead of the strictly mandated `evidence/` directory structure.
-- **Retrieval Explanation:** The knowledge base retrieval provides source tracking but lacks a natural language explanation for *why* a chunk was retrieved.
 
-## 21. Production Improvements
+## 20. Production Improvements
 - Integrate a real streaming ASR service (e.g., Deepgram or Whisper live) for Q4.
 - Implement vector embeddings alongside BM25 for hybrid search in Q2.
 - Integrate an LLM to dynamically synthesize the BM25 retrieval results with natural language explanations.
 - Deploy components as independent microservices (e.g., via FastAPI or gRPC).
 
-## 22. Assessment Requirement Mapping
+## 21. Assessment Requirement Mapping
 - **Knowledge-Grounded Agent:** Met (Q1, `voice_assistant/src/agent.py`)
 - **Production Knowledge Base:** Partially Met (Q2, `knowledge_system/src/`, lacks relevance explanation)
 - **Native-Language Bots:** Met (Q3, `regional_bots/src/`)
