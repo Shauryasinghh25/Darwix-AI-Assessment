@@ -158,6 +158,13 @@ python tools/regression_matrix.py
 To generate test evidence and build the knowledge base:
 ```bash
 python tools/generate_evidence.py
+
+### Starting the Demo UI
+You can start a local demo server for manual testing of the various components (Voice Assistant, Regional Bots, etc.) via a web browser:
+```bash
+python demo-server/src/server.py --host 127.0.0.1 --port 8088
+```
+Once the server is running, navigate to [http://127.0.0.1:8088/](http://127.0.0.1:8088/) in your browser to access the UI.
 ```
 
 ## 19. Environment Variables
