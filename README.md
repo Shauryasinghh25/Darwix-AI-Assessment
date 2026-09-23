@@ -165,7 +165,7 @@ You can start a local demo server for manual testing of the various components (
 python demo-server/src/server.py --host 127.0.0.1 --port 8088
 ```
 Once the server is running, navigate to [http://127.0.0.1:8088/](http://127.0.0.1:8088/) in your browser to access the UI.
-```
+
 
 ## 19. Environment Variables
 No secrets are required to run the current regression suite. For production deployment, you would need:
